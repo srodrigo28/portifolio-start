@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Cadastro</title>
+</head>
+<body class="">
+    <div class="container">
+        <h1 class="mt-5 mb-3">Cadastro de produtos</h1>
+
+        <form>
+            <div class="row">
+                <div class="col-6">
+                    <input type="text" class="form-control" placeholder="nome do produto">
+                </div>
+                <div class="col-2">
+                    <input type="text" class="form-control" placeholder="quantidade">
+                </div>
+                <div class="col-2">
+                    <input type="text" class="form-control" placeholder="R$ 0,00">
+                </div>
+                <button class="btn btn-outline-success" onclick="validar()" >Cadastrar</button>
+            </div>
+        </form>
+
+        <table class="table mt-3">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nome</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>Computador Dell core i3</td>
+                    <td>988</td>
+                    <td>R$ 2.990,00</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Computador Dell core i5</td>
+                    <td>588</td>
+                    <td>R$ 3.990,00</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Computador Dell core i7</td>
+                    <td>288</td>
+                    <td>R$ 5.990,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <style>
+        thead tr{
+            color: white;
+            background-color: green;
+        }
+        tbody tr{
+            transition: .7s;
+        }
+        tbody tr:hover{
+            font-size: 1.3em;
+            color: white;
+            cursor: pointer;
+            background-color: blueviolet;
+        }
+    </style>
+    <script>
+        function validar(){
+            alert('Validando ...')
+        }
+        function cadastrar(){
+            alert('Cadastrar ...')
+        }
+    </script>
+</body>
+</html>
